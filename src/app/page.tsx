@@ -73,6 +73,7 @@ export default function Home() {
         <p>See the difference with our live preview. Experience how your videos will look without YouTube branding and ads.</p>
         <div className="videoBox mb-10">
           <iframe
+            loading="lazy"
             width="100%"
             className="ytBox"
             src="https://www.youtube.com/embed/0e3GPea1Tyg?si=E1-O612m8qQcMGwf&amp;start=61"
@@ -86,8 +87,8 @@ export default function Home() {
             src="https://vasux.xyz/-SgaYPzdE"
             poster="/placeholder.jpg"
             controls
-            autoPlay
             muted
+            preload="none"
           ></video>
         </div>
       </div>
