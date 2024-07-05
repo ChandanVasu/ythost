@@ -32,8 +32,8 @@ const config: Config = {
   plugins: [addVariablesForColors],
 };
 
-function flattenColorPalette(colors: any) {
-  const result: any = {};
+function flattenColorPalette(colors: Record<string, string | Record<string, string>>): Record<string, string> {
+  const result: Record<string, string> = {};
 
   for (const [color, values] of Object.entries(colors)) {
     if (typeof values === "string") {
@@ -48,7 +48,7 @@ function flattenColorPalette(colors: any) {
   return result;
 }
 
-function addVariablesForColors({ addBase, theme }: any) {
+function addVariablesForColors({ addBase, theme }: { addBase: (arg0: Record<string, Record<string, string>>) => void, theme: (arg0: string) => Record<string, string | Record<string, string>> }) {
   const allColors = flattenColorPalette(theme("colors"));
   const newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
