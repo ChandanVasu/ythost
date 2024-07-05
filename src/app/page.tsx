@@ -29,7 +29,11 @@ export default function Home() {
       setShortUrl(generatedShortUrl);
       setCopySuccess(false); // Reset copy success message
     } catch (error) {
-      console.error('Error creating short URL:', error.message);
+      if (error instanceof Error) {
+        console.error('Error creating short URL:', error.message);
+      } else {
+        console.error('Unexpected error:', error);
+      }
     }
   };
 
