@@ -89,7 +89,7 @@ export default function Home() {
           ></iframe>
           <video
             src="https://vasux.xyz/-SgaYPzdE"
-            poster="https://i.ytimg.com/vi/0e3GPea1Tyg/hq720.jpg"
+            poster="/placeholder.jpg"
             controls
             autoPlay
             muted
