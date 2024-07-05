@@ -105,7 +105,7 @@ video {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("/bg.jpg");
+  background-image: url("/bg.webp");
   background-size: cover;
   background-position: center;
   opacity: 0.2;
@@ -113,6 +113,10 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.topBar p {
+  width: 50%;
 }
 
 /* URL box styles */

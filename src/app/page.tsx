@@ -49,7 +49,7 @@ export default function Home() {
       <div className="topBar flex items-center justify-center">
         <div className="flex flex-col items-center justify-center mt-32">
           <h1 className="main-title">YouTube Video Embedding Tool</h1>
-          <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base text-center">
+          <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base text-center ">
             Welcome to the ultimate solution for embedding YouTube videos with all controls removed. Our tool simplifies the process, giving you clean, distraction-free video links for a more professional presentation.
           </p>
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 mt-10">
@@ -66,11 +66,6 @@ export default function Home() {
             <AnimatedTooltip items={people} />
           </div>
         </div>
-        <Image
-              src="/ythost.jpg"
-              width={500}
-              height={500}
-              alt="Picture of the author"/>
           </div>
 
       <div className="livePreview"> 
