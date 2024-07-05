@@ -3,6 +3,8 @@
 import { useState } from 'react';
 import { HoverEffect } from "../components/ui/card-hover-effect";
 import { AnimatedTooltip } from "../components/ui/animated-tooltip";
+import Image from 'next/image'
+
 
 export default function Home() {
   const [longUrl, setLongUrl] = useState('');
@@ -64,8 +66,12 @@ export default function Home() {
             <AnimatedTooltip items={people} />
           </div>
         </div>
-        <img className="side-image" src="/ythost.jpg" alt="logo" />
-      </div>
+        <Image
+              src="/ythost.jpg"
+              width={500}
+              height={500}
+              alt="Picture of the author"/>
+          </div>
 
       <div className="livePreview"> 
         <h4>Live Preview</h4>
