@@ -41,7 +41,7 @@ body {
 /* Sticky header styles */
 .head {
   box-shadow: rgba(255, 255, 255, 0.16) 0px 3px 6px, rgba(255, 255, 255, 0.23) 0px 3px 6px;
-  padding: 10px 80px;
+  padding: 5px 80px;
   position: sticky;
   top: 0;
   z-index: 99;

@@ -1,11 +1,17 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Navbar = () => {
     return (
         <nav className="bg-black-500 p-2 head">
             <div className="container mx-auto flex justify-between items-center">
                 <div className="text-white text-lg font-bold">
-                <img className="h-10" src="/logo.svg" alt="" />
+                    <Image
+                        src="/logo.svg"
+                        alt="Logo"
+                        width={120} // Adjust the width as per your design
+                        height={30} // Adjust the height as per your design
+                    />
                 </div>
                 <div className="space-x-4">
                     <Link href="/">Home</Link>
