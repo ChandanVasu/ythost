@@ -1,4 +1,3 @@
-// Ensure client-side rendering for useState
 "use client";
 
 import { useState } from 'react';
@@ -10,7 +9,7 @@ export default function Home() {
   const [shortUrl, setShortUrl] = useState('');
   const [copySuccess, setCopySuccess] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
       const response = await fetch('https://vasux.xyz/yt', {
@@ -68,7 +67,6 @@ export default function Home() {
         <h4>Live Preview</h4>
         <p>See the difference with our live preview. Experience how your videos will look without YouTube branding and ads.</p>
         <div className="videoBox mb-10">
-          
           <iframe
             width="100%"
             className="ytBox"
@@ -104,12 +102,12 @@ export default function Home() {
           </button>
         </form>
         {shortUrl && (
-          <div className=" text-center videoShortUrl">
+          <div className="text-center videoShortUrl">
             <div className="flex items-center justify-center videoShortUrlInner">
               <a href={shortUrl} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">
                 {shortUrl}
               </a>
-              <button onClick={copyToClipboard} className="ml-2 text-blue-500 hover:underline focus:outline-none copyClass ">
+              <button onClick={copyToClipboard} className="ml-2 text-blue-500 hover:underline focus:outline-none copyClass">
               </button>
               {copySuccess && <span className="ml-2 text-red-500">Copied!</span>}
             </div>
