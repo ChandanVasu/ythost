@@ -10,8 +10,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
@@ -19,11 +18,11 @@ const config: Config = {
       keyframes: {
         spotlight: {
           "0%": {
-            opacity: 0,
+            opacity: "0", // Fixed: value should be a string
             transform: "translate(-72%, -62%) scale(0.5)",
           },
           "100%": {
-            opacity: 1,
+            opacity: "1", // Fixed: value should be a string
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
@@ -50,11 +49,11 @@ function flattenColorPalette(colors: any) {
 }
 
 function addVariablesForColors({ addBase, theme }: any) {
-  let allColors = flattenColorPalette(theme("colors"));
-  let newVars = Object.fromEntries(
+  const allColors = flattenColorPalette(theme("colors"));
+  const newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
- 
+
   addBase({
     ":root": newVars,
   });
