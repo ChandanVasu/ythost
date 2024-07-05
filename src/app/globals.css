@@ -87,8 +87,8 @@ video {
 
 /* Side image styles */
 .side-image {
-  width: 400px;
-  height: 400px;
+  width: 500px;
+  height: 500px;
 }
 
 /* Top bar styles */
@@ -105,7 +105,7 @@ video {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("/bg.svg");
+  background-image: url("/bg.jpg");
   background-size: cover;
   background-position: center;
   opacity: 0.2;

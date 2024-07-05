@@ -64,7 +64,7 @@ export default function Home() {
             <AnimatedTooltip items={people} />
           </div>
         </div>
-        <img className="side-image" src="/ythost.svg" alt="logo" />
+        <img className="side-image" src="/ythost.jpg" alt="logo" />
       </div>
 
       <div className="livePreview"> 
