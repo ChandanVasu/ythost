@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Remove YouTube Information From Embedded Videos",
   description: "Remove Title from Embedded YouTube Videos with our powerful YouTube Embed Tool. Achieve a clean, distraction-free video embedding experience by removing YouTube branding and ads.",
-  keywords: ["Remove Title from Embedded YouTube Videos", "YouTube Embed Tool", "Remove YouTube Branding", "Distraction-Free Video Embedding"],
+  keywords: ["Remove Title from Embedded YouTube Videos", "YouTube Embed Tool", "Remove YouTube Branding", "Distraction-Free Video Embedding", "Remove Title", "Embedded YouTube Videos"],
   openGraph: {
     title: "Remove YouTube Information From Embedded Videos",
     description: "Remove titles from embedded YouTube videos with our tool. Clean, distraction-free video embedding without YouTube's controls, ads, or branding.",
