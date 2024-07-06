@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Head from "next/head";
 import "./globals.css";
 import Header from "../components/templatePart/header";
 import Footer from "../components/templatePart/footer";
@@ -33,27 +32,10 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const keywords = Array.isArray(metadata.keywords) ? metadata.keywords : [];
-
   return (
     <html lang="en">
       <GoogleAnalytics gaId="G-76N7T0NVFH" />
-      <Head>
-        <meta name="keywords" content={keywords.join(", ")} />
-        <meta property="og:title" content={metadata.openGraph.title} />
-        <meta property="og:description" content={metadata.openGraph.description} />
-        <meta property="og:url" content={metadata.openGraph.url} />
-        <meta property="og:type" content={metadata.openGraph.type} />
-        <meta property="og:image" content={metadata.openGraph.images[0].url} />
-        <meta property="og:image:width" content={metadata.openGraph.images[0].width} />
-        <meta property="og:image:height" content={metadata.openGraph.images[0].height} />
-        <meta property="og:image:alt" content={metadata.openGraph.images[0].alt} />
-      </Head>
-      <body className={inter.className}>
-        <Header /> 
-        {children} 
-        <Footer /> 
-      </body>
+      <body className={inter.className}> <Header/> {children} <Footer/> </body>
     </html>
   );
 }
