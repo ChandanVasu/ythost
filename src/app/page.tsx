@@ -87,8 +87,6 @@ export default function Home() {
             src="https://vasux.xyz/-SgaYPzdE"
             poster="/placeholder.jpg"
             controls
-            muted
-            preload="none"
           ></video>
         </div>
       </div>
@@ -104,7 +102,7 @@ export default function Home() {
             className="urlTextBox"
           />
           <button type="submit" className="urlButton">
-            Host Url
+          Generate Url
           </button>
         </form>
         {shortUrl && (
@@ -122,6 +120,8 @@ export default function Home() {
       </div>
 
       <div>
+        <h4 className="features">Features</h4>
+        <p></p>
         <HoverEffect items={projects} />
       </div>
     </div>
