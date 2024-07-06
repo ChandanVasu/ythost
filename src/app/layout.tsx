@@ -33,7 +33,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const keywords = metadata.keywords || [];
+  const keywords = Array.isArray(metadata.keywords) ? metadata.keywords : [];
 
   return (
     <html lang="en">
