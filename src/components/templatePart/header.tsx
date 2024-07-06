@@ -9,7 +9,7 @@ const Navbar = () => {
                         <img className="h-10" src="/logo.svg" alt="ythost" />
                     </a>
                 </div>
-                <div className="space-x-4">
+                <div className="space-x-4 headNav">
                     <Link href="/">Home</Link>
                     <Link href="/about">About</Link>
                     <Link href="/services">Services</Link>

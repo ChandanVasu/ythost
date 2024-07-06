@@ -47,8 +47,8 @@ export default function Home() {
   return (
     <div className="main-area">
       <div className="topBar flex items-center justify-center">
-        <div className="flex flex-col items-center justify-center mt-32">
-          <h1 className="main-title">YouTube Video Embedding Tool</h1>
+        <div className="flex flex-col items-center justify-center mt-32 mainTop">
+          <h1 className="main-title">Remove Title from Embedded YouTube Videos Tool</h1>
           <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base text-center ">
             Welcome to the ultimate solution for embedding YouTube videos with all controls removed. Our tool simplifies the process, giving you clean, distraction-free video links for a more professional presentation.
           </p>
