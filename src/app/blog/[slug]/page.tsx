@@ -4,15 +4,15 @@ import Image from 'next/image';
 const postContent = {
     'remove-title-from-embedded-youtube-videos': {
         title: 'Remove Title from Embedded YouTube Videos for a Cleaner Look',
-        description: 'Remove titles from embedded YouTube videos with Vasux. Clean, distraction-free video embedding without YouTube\'s controls, ads, or branding.',
+        description: 'Remove titles from embedded YouTube videos with Vasux. Clean, distraction-free video embedding without YouTube&apos;s controls, ads, or branding.',
         imageUrl: '/blog1.jpg',
         content: (
             <>
-                <p>Are you tired of YouTube's branding, controls, ads, and especially the video titles cluttering your embedded videos? Look no further! YT Video Embedded Title Remove is here to help you remove titles from embedded YouTube videos, providing a clean, professional, and distraction-free viewing experience.</p>
+                <p>Are you tired of YouTube&apos;s branding, controls, ads, and especially the video titles cluttering your embedded videos? Look no further! YT Video Embedded Title Remove is here to help you remove titles from embedded YouTube videos, providing a clean, professional, and distraction-free viewing experience.</p>
 
                 <section className="mb-8">
                     <h2 className="text-3xl font-semibold mb-2">What is YT Video Embedded Title Remove?</h2>
-                    <p>YT Video Embedded Title Remove is a user-friendly tool designed to help you embed YouTube videos seamlessly without showing YouTube's title, controls, ads, or branding. With this tool, you can remove the title from embedded YouTube videos, ensuring that your content remains the focal point.</p>
+                    <p>YT Video Embedded Title Remove is a user-friendly tool designed to help you embed YouTube videos seamlessly without showing YouTube&apos;s title, controls, ads, or branding. With this tool, you can remove the title from embedded YouTube videos, ensuring that your content remains the focal point.</p>
                 </section>
 
                 <section className="mb-8">
@@ -28,7 +28,7 @@ const postContent = {
                 <section className="mb-8">
                     <h2 className="text-3xl font-semibold mb-2">Benefits of Using YT Video Embedded Title Remove</h2>
                     <ul className="list-disc list-inside mb-4">
-                        <li>No Distractions: Remove the title from embedded YouTube videos along with YouTube's controls, ads, and branding.</li>
+                        <li>No Distractions: Remove the title from embedded YouTube videos along with YouTube&apos;s controls, ads, and branding.</li>
                         <li>Seamless Embedding: Provide a clean, professional look for embedded videos.</li>
                         <li>User-Friendly Experience: Enhance user engagement by focusing solely on the video content.</li>
                     </ul>
@@ -38,7 +38,7 @@ const postContent = {
                     <h2 className="text-3xl font-semibold mb-2">Features</h2>
                     <ul className="list-disc list-inside mb-4">
                         <li>Ad-Free Videos: Ensure no ads interrupt your videos.</li>
-                        <li>No YouTube Controls: Videos play without YouTube's control interface.</li>
+                        <li>No YouTube Controls: Videos play without YouTube&apos;s control interface.</li>
                         <li>Clean Embedding: Simple and elegant video embedding for a professional appearance.</li>
                         <li>Easy to Use: Just copy, paste, and generate.</li>
                     </ul>
@@ -50,7 +50,7 @@ const postContent = {
                         <li>Visit <a href="https://vasux.site" className="text-blue-500 hover:underline">vasux.site</a>.</li>
                         <li>Copy the URL of your desired YouTube video.</li>
                         <li>Paste it into the input box on our site.</li>
-                        <li>Click on 'Generate URL'.</li>
+                        <li>Click on &apos;Generate URL&apos;.</li>
                         <li>Use the generated URL to embed the video on your platform.</li>
                     </ol>
                 </section>
