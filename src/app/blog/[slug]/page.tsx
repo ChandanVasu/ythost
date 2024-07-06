@@ -68,7 +68,8 @@ interface Params {
 export default function BlogPost({ params }: Params) {
     const { slug } = params;
 
-    const post = postContent[slug];
+    // Type assertion to inform TypeScript that slug is a valid key of postContent
+    const post = postContent[slug as keyof typeof postContent];
 
     if (!post) {
         return <p>Post not found</p>;
