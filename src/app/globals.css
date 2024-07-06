@@ -80,6 +80,13 @@
   top: 0px; */
         width: fit-content;
     }
+    .urlTextBox, .urlBox{
+        width: 100% !important;
+    }
+
+    .livePreview{
+        margin-top: 5px !important;
+    }
 }
 
 /* Main title styles */
@@ -198,7 +205,17 @@ video {
     margin: auto;
     padding: 50px 20px;
     border-radius: 20px;
+    width: 60%;
     box-shadow: rgba(255, 255, 255, 0.16) 0px 3px 6px, rgba(255, 255, 255, 0.23) 0px 3px 6px;
+}
+
+.card-box{
+    box-shadow: rgba(255, 255, 255, 0.16) 0px 3px 6px, rgba(255, 255, 255, 0.23) 0px 3px 6px;
+}
+
+.card-box-grid{
+    gap: 20px;
+
 }
 
 /* URL input box styles */
