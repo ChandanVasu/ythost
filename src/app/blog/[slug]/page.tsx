@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const postContent = {
     'remove-title-from-embedded-youtube-videos': {
-        title: 'Remove Title from Embedded YouTube Videos for a Cleaner Look',
+        title: 'Remove Title from Embedded YouTube Videos Use YT Video Embedded Title Remover',
         description: 'Remove titles from embedded YouTube videos with Vasux. Clean, distraction-free video embedding without YouTube&apos;s controls, ads, or branding.',
         imageUrl: '/blog1.jpg',
         content: (
